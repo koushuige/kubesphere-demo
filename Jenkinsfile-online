@@ -61,7 +61,7 @@ pipeline {
 
         stage('deploy to dev') {
           when{
-            branch 'master'
+            branch 'main'
           }
           steps {
             input(id: 'deploy-to-dev', message: 'deploy to dev?')
